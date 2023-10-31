@@ -13,7 +13,7 @@ namespace HelloCube.Execute
         public bool Reparenting;
         public bool EnableableComponents;
         public bool GameObjectSync;
-        public bool Creation;       //added #9 Creation bool **************************************************
+        public bool Creation;       //added #9 Creation bool 
 
         class Baker : Baker<ExecuteAuthoring>
         {
@@ -29,7 +29,7 @@ namespace HelloCube.Execute
                 if (authoring.GameObjectSync) AddComponent<GameObjectSync>(entity);
                 if (authoring.Reparenting) AddComponent<Reparenting>(entity);
                 if (authoring.EnableableComponents) AddComponent<EnableableComponents>(entity);
-                if (authoring.Creation) AddComponent<Creation>(entity);     //added this *****************************
+                if (authoring.Creation) AddComponent<Creation>(entity);     //added this 
 
             }
         }
@@ -67,7 +67,7 @@ namespace HelloCube.Execute
     {
     }
 
-    //Added Creation Struct  *****************************************
+    //Added Creation Struct  
     public struct Creation : IComponentData
     { 
     }
